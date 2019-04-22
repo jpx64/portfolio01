@@ -50,85 +50,6 @@ html, body {
     color: #585858;
 }
 
-.profileMain{
-    padding: 123px;
-}
-
-.contentTitle{
-    font-size: 20px;
-    text-align: center;
-    margin: auto;
-    width: 100px;
-}
-
-.contentTitle > h1 {
-    border-bottom: #585858 1px solid;
-    font-size: 20px;
-    font-weight: normal;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-
-.profileDetail {
-    display: flex;
-    width: 80%;
-    margin: 0 auto;
-}
-
-.profileIcon {
-    margin: auto 30px;
-}
-
-
-.profileIconImg {
-    border-radius: 50%;
-    border: #585858 2px solid;
-}
-
-.about {
-    margin-bottom: 30px;
-}
-
-.about > h2 {
-    margin-bottom: 5px;
-}
-
-.aboutDetal{
-    margin-top: 5px;
-    padding: 0 0 0 20px;
-}
-
-/* skillList */
-
-.skill > h2 {
-    margin-bottom: 5px;
-}
-
-.skill > h3 {
-    margin-top: 5px;
-    margin-bottom: 0px;
-    padding-left: 20px;
-}
-
-.skillList {
-    margin-top: 0px;
-    margin-bottom: 5px;
-    padding-left: 40px;
-}
-
-.skillList > li {
-    display: inline-block;
-    /* text-align: center; */
-}
-
-.skillList > li:not(:last-child)::after {
-    content: ' /';
-}
-
-/* skillList */
-
-
 .copyright {
     position: fixed;
     bottom: 0px;
@@ -153,19 +74,5 @@ html, body {
         margin: 0 2.2% 0;
     }
     
-    .profileDetail {
-        display: block;
-        width: 95%;
-        margin:auto;
-    }
-    
-    .profileIcon {
-        margin-left:auto;
-        margin-right:auto;
-    }
-
-    .profileIcon > p {
-        text-align: center;
-    }
         
 }
