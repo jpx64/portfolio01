@@ -69,7 +69,7 @@
 
 .skillList > li {
     display: inline-block;
-    /* text-align: center; */
+    text-align: center;
 }
 
 .skillList > li:not(:last-child)::after {

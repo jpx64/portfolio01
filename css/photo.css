@@ -1,12 +1,68 @@
 @charset "UTF-8";
 
 .photoMain{
-    padding: 123px;
+    padding-top: 123px;
+}
+
+.contentTitle{
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+    width: 100px;
+}
+
+.contentTitle > h1 {
+    border-bottom: #585858 1px solid;
+    font-size: 20px;
+    font-weight: normal;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.categoryList{
+    height: 23px;
+    padding: 3px 0 3px;
+    text-align: center;
+}
+
+.categoryList > ul > li {
+    display: inline-block;
+    margin: 0 30px 0;
+}
+
+.categoryList > ul > li > a {
+    color: #585858;
+    font-size: 18px;
+}
+
+.photoList{
+    max-width: 1280px;
+    margin: 10px auto;
+    text-align: center;
 }
 
 
 
+figure {
+    display:inline-block;
+    border: 1px solid;
+    padding: 5px 5px 0;
+    width: 205px;
+    height: 205px;
+    margin: 10px 10px 10px 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.photo {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+
 @media screen and (max-width: 1099px){
 
+    
         
 }
