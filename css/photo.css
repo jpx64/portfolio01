@@ -42,20 +42,11 @@
     text-align: center;
 }
 
-
-
-figure {
-    display:inline-block;
-    margin: 5px 5px 5px 5px;
-    text-align: center;
-    vertical-align: TOP;
-}
-
-
 .photo {
     max-width: 200px;
     max-height: 200px;
     border-radius: 10%;
+    margin: 5px 5px 5px 5px;
 }
 
 
