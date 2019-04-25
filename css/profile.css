@@ -89,7 +89,7 @@
         width: 95%;
         margin:auto;
     }
-    
+
     .profileIcon {
         margin-left:auto;
         margin-right:auto;
@@ -98,5 +98,5 @@
     .profileIcon > p {
         text-align: center;
     }
-        
+
 }
