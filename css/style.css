@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Gugi');
 
 html, body {
     margin: 0;
@@ -16,6 +17,7 @@ html, body {
     height: 100px;
     margin: 0;
     font-size: 20px;
+    font-family: 'Gugi', cursive, 'Hiragino Sans','ヒラギノ角ゴシック','Arial','Helvetica Neue','Avenir','Helvetica',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
     text-align: center;
     background-color: #7788ff;
     color: white;
@@ -47,6 +49,7 @@ html, body {
 
 .headNav > li > a {
     font-weight: bold;
+    font-family: 'Gugi', cursive, 'Hiragino Sans','ヒラギノ角ゴシック','Arial','Helvetica Neue','Avenir','Helvetica',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
     color: #585858;
 }
 
