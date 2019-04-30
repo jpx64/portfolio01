@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/photo.css">
     <link rel="stylesheet" href="./lightbox/css/lightbox.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
 </head>
 
 <body>
@@ -17,58 +18,85 @@
         </div>
         <nav>
             <ul class="headNav">
-                <li><a href="./index.html">HOME</a></li>
                 <li><a href="./index.html">PROFILE</a></li>
                 <li><a href="./photo.html">PHOTO</a></li>
-                <li><a href="">CONTACT</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <!-- photo -->
-        <div class="photoMain">
-            <div class="contentTitle">
-                <h1>photo</h1>
-            </div>
+    <div id="photoApp">
+        <div class="contentTitle">
+            <h1>photo</h1>
         </div>
-        <div class="categoryList">
+        <!-- <div class="categoryList">
             <ul>
-                <li><a href="">touring</a></li>
-                <li><a href="">shrine</a></li>
-                <li><a href="">tidaland</a></li>
-                <li><a href="">other</a></li>
+                <li v-for="item in tags">
+                    <label>
+                        <input type="checkbox" value="item.word" v-model="item.checked">
+                        <span>{{item.word}}</span>
+                    </label>
+                </li>
             </ul>
+        </div> -->
+        <div id="photoList">
+                <a v-for="photograph in photos" class="photo" v-bind:href="photograph.file" data-lightbox="photolist"><img class="photo" v-bind:src="photograph.file"></a>
         </div>
-        <div class="photoList">
-                <a class="photo" href="img/photo/5D2_0004073.jpg" data-lightbox="photolist"><img class="photo" src="img/photo/5D2_0004073.jpg"></a>
-                <a class="photo" href="img/photo/5D2_0008124.jpg" data-lightbox="photolist"><img class="photo" src="img/photo/5D2_0008124.jpg"></a>
-                <a class="photo" href="img/photo/5D2_0015233.png" data-lightbox="photolist"><img class="photo" src="img/photo/5D2_0015233.png"></a>
-                <a class="photo" href="img/photo/5D2_0022641_2.jpg" data-lightbox="photolist"><img class="photo" src="img/photo/5D2_0022641_2.jpg"></a>
-                <a class="photo" href="img/photo/5D2_0035436.jpg" data-lightbox="photolist"><img class="photo" src="img/photo/5D2_0035436.jpg"></a>
-                <a class="photo" href="img/photo/5D2_0035460.jpg" data-lightbox="photolist"><img class="photo" src="img/photo/5D2_0035460.jpg"></a>
-                <a class="photo" href="img/photo/5D2_0038227.jpg" data-lightbox="photolist"><img class="photo" src="img/photo/5D2_0038227.jpg"></a>
-                <a class="photo" href="img/photo/5D2_0039657.jpg" data-lightbox="photolist"><img class="photo" src="img/photo/5D2_0039657.jpg"></a>
-                <a class="photo" href="img/photo/5D2_0039908.jpg" data-lightbox="photolist"><img class="photo" src="img/photo/5D2_0039908.jpg"></a>
-                <a class="photo" href="img/photo/5D2_0044284.jpg" data-lightbox="photolist"><img class="photo" src="img/photo/5D2_0044284.jpg"></a>
-                <a class="photo" href="img/photo/5D2_0044310.jpg" data-lightbox="photolist"><img class="photo" src="img/photo/5D2_0044310.jpg"></a>
-                <a class="photo" href="img/photo/5D2_0044609.jpg" data-lightbox="photolist"><img class="photo" src="img/photo/5D2_0044609.jpg"></a>
-                <a class="photo" href="img/photo/5D2_0044641.jpg" data-lightbox="photolist"><img class="photo" src="img/photo/5D2_0044641.jpg"></a>
-                <a class="photo" href="img/photo/D800E_0005855.jpg" data-lightbox="photolist"><img class="photo" src="img/photo/D800E_0005855.jpg"></a>
-                <a class="photo" href="img/photo/D800E_0010642.jpg" data-lightbox="photolist"><img class="photo" src="img/photo/D800E_0010642.jpg"></a>
-                <a class="photo" href="img/photo/D800E_0022473.jpg" data-lightbox="photolist"><img class="photo" src="img/photo/D800E_0022473.jpg"></a>
-                <a class="photo" href="img/photo/D800E_0023991.png" data-lightbox="photolist"><img class="photo" src="img/photo/D800E_0023991.png"></a>
-                <a class="photo" href="img/photo/D800E_0024166.png" data-lightbox="photolist"><img class="photo" src="img/photo/D800E_0024166.png"></a>
-                <a class="photo" href="img/photo/D800E_0025416.png" data-lightbox="photolist"><img class="photo" src="img/photo/D800E_0025416.png"></a>
-                <a class="photo" href="img/photo/D800E_0025982.png" data-lightbox="photolist"><img class="photo" src="img/photo/D800E_0025982.png"></a>
-                <a class="photo" href="img/photo/D800E_0026703.jpg" data-lightbox="photolist"><img class="photo" src="img/photo/D800E_0026703.jpg"></a>
-                <a class="photo" href="img/photo/D800E_0031018.png" data-lightbox="photolist"><img class="photo" src="img/photo/D800E_0031018.png"></a>
-                <a class="photo" href="img/photo/D800E_0031648.jpg" data-lightbox="photolist"><img class="photo" src="img/photo/D800E_0031648.jpg"></a>
-                <a class="photo" href="img/photo/D800E_0031650.jpg" data-lightbox="photolist"><img class="photo" src="img/photo/D800E_0031650.jpg"></a>
-                <a class="photo" href="img/photo/D800E_0033134.png" data-lightbox="photolist"><img class="photo" src="img/photo/D800E_0033134.png"></a>
-                <a class="photo" href="img/photo/D800E_0034492.png" data-lightbox="photolist"><img class="photo" src="img/photo/D800E_0034492.png"></a>
-                <a class="photo" href="img/photo/D800E_0034546.png" data-lightbox="photolist"><img class="photo" src="img/photo/D800E_0034546.png"></a>
-                <a class="photo" href="img/photo/D800E_0034610_2.png" data-lightbox="photolist"><img class="photo" src="img/photo/D800E_0034610_2.png"></a>
-        </div>
+    </div>
+    <script>
+            new Vue({
+                el:photoApp,
+                data:{
+                    photos:[
+                        {file:'img/photo/5D2_0004073.jpg',tag:'touring'},
+                        {file:'img/photo/5D2_0008124.jpg',tag:'tidaland'},
+                        {file:'img/photo/5D2_0015233.png',tag:'tidaland'},
+                        {file:'img/photo/5D2_0022641_2.jpg',tag:'touring'},
+                        {file:'img/photo/5D2_0035436.jpg',tag:'shrine'},
+                        {file:'img/photo/5D2_0035460.jpg',tag:'other'},
+                        {file:'img/photo/5D2_0038227.jpg',tag:'tidaland'},
+                        {file:'img/photo/5D2_0039657.jpg',tag:'touring'},
+                        {file:'img/photo/5D2_0039908.jpg',tag:'touring'},
+                        {file:'img/photo/5D2_0044284.jpg',tag:'tidaland'},
+                        {file:'img/photo/5D2_0044310.jpg',tag:'tidaland'},
+                        {file:'img/photo/5D2_0044609.jpg',tag:'tidaland'},
+                        {file:'img/photo/5D2_0044641.jpg',tag:'tidaland'},
+                        {file:'img/photo/D800E_0005855.jpg',tag:'touring'},
+                        {file:'img/photo/D800E_0010642.jpg',tag:'tidaland'},
+                        {file:'img/photo/D800E_0022473.jpg',tag:'touring'},
+                        {file:'img/photo/D800E_0023991.png',tag:'touring'},
+                        {file:'img/photo/D800E_0024166.png',tag:'touring'},
+                        {file:'img/photo/D800E_0025416.png',tag:'touring'},
+                        {file:'img/photo/D800E_0025982.png',tag:'touring'},
+                        {file:'img/photo/D800E_0026703.jpg',tag:'touring'},
+                        {file:'img/photo/D800E_0031018.png',tag:'shrine'},
+                        {file:'img/photo/D800E_0031648.jpg',tag:'touring'},
+                        {file:'img/photo/D800E_0031650.jpg',tag:'touring'},
+                        {file:'img/photo/D800E_0033134.png',tag:'touring'},
+                        {file:'img/photo/D800E_0034492.png',tag:'touring'},
+                        {file:'img/photo/D800E_0034546.png',tag:'touring'},
+                        {file:'img/photo/D800E_0034610_2.png',tag:'touring'}
+                    ],
+                    tags : [
+                        {checked:false,word:'touring'},
+                        {checked:false,word:'shrine'},
+                        {checked:false,word:'tidaland'},
+                        {checked:false,word:'other'}
+                    ]
+                },
+                computed:{
+                    photoFilter: function(){
+                        if(this.item.word){
+                            return this.photos.filter(function(value){
+                                return (value.indexOf(this.item.word) > -1);
+                            }, this);
+                        }else{
+                            // this.findWordがからのときは、リストをそのまま残す
+                            return this.photos;
+                        }
+                    }
+                }
+            })
+        </script>
     </main>
     <footer>
         <div class=" copyright">

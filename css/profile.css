@@ -73,12 +73,29 @@
 }
 
 .skillList > li:not(:last-child)::after {
-    content: ' /';
+    content: ' / ';
 }
 
 /* skillList */
 
+.contact > h2 {
+    margin-bottom: 5px;
+}
 
+.contactList {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding-left: 40px;
+}
+
+.contactList > li {
+    display: inline-block;
+    text-align: center;
+}
+
+.contactList > li:not(:last-child)::after {
+    content: '　';
+}
 
 
 
