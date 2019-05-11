@@ -51,11 +51,11 @@
 
 /* skillList */
 
-.skill > h2 {
+#skill > h2 {
     margin-bottom: 5px;
 }
 
-.skill > h3 {
+#skill > h3 {
     margin-top: 5px;
     margin-bottom: 0px;
     padding-left: 20px;
@@ -73,6 +73,7 @@
 }
 
 .skillList > li:not(:last-child)::after {
+    white-space: pre-wrap;
     content: ' / ';
 }
 
